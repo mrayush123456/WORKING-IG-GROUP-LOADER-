@@ -21,50 +21,61 @@ HTML_TEMPLATE = '''
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb);
-            height: 100vh;
+            background-color: #2c3e50;
+            color: #ecf0f1;
             margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #333;
+            height: 100vh;
         }
         .container {
-            background-color: #ffffff;
+            background-color: #34495e;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             max-width: 500px;
             width: 100%;
         }
         h1 {
             text-align: center;
-            color: #555;
+            margin-bottom: 20px;
+            color: #1abc9c;
         }
         label {
-            display: block;
+            font-weight: bold;
             margin: 10px 0 5px;
         }
         input, select, button {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #ccc;
+            border: none;
             border-radius: 5px;
+            font-size: 16px;
+        }
+        input, select {
+            background-color: #ecf0f1;
+            color: #2c3e50;
         }
         button {
-            background-color: #007bff;
+            background-color: #1abc9c;
             color: white;
-            font-weight: bold;
             cursor: pointer;
-            border: none;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: #16a085;
         }
-        .stop-button {
-            background-color: #ff4d4d;
-            margin-top: -10px;
+        .message {
+            color: red;
+            font-size: 14px;
+            text-align: center;
+        }
+        .success {
+            color: #1abc9c;
+            font-size: 14px;
+            text-align: center;
         }
     </style>
 </head>
